@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chai page
+{% endblock title %}
+
+{% block content %}
+<div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+    <img class="w-full h-48 object-cover" src="{{chai.image.url}}" alt="">
+    <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">{{chai.name}}</h3>
+        <p class="text-gray-700 mb-4">{{chai.description}}</p>
+        <h2 class="text-2xl font-bold text-green-500">₹{{chai.price}}</h2>
+    </div>
+</div>
+{% endblock content %}
